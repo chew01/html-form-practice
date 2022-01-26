@@ -231,7 +231,7 @@ label {
 }
 
 tr:not(:last-child) > td {
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 
 tr > td:first-child {
@@ -263,9 +263,15 @@ input:invalid:not(:placeholder-shown) {
 
 input + div {
   margin-top: 4px;
-  height: 0.8rem;
+  height: 1.2rem;
   font-size: 0.8rem;
   color: rgb(216, 29, 29);
+  max-width: 15rem;
+  visibility: hidden;
+}
+
+input:invalid:not(:placeholder-shown) + div {
+  visibility: visible;
 }
 
 /* Submission */
